@@ -1,0 +1,51 @@
+{
+  "id": "1642125",
+  "name": "whyqa",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5127202",
+      "name": "bookmark-star",
+      "font_class": "bookmark-star",
+      "unicode": "e72f",
+      "unicode_decimal": 59183
+    },
+    {
+      "icon_id": "248953",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "438027",
+      "name": "select",
+      "font_class": "select",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "749382",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "8328075",
+      "name": "Cancel",
+      "font_class": "cancel",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "9568068",
+      "name": "Edit",
+      "font_class": "Edit",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    }
+  ]
+}

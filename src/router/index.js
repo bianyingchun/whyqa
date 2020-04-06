@@ -1,22 +1,35 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
+import Extact_qa from '../views/Extact_qa.vue'
+import Test_q from '../views/Test_q.vue'
+import extact_item from '../components/extact_item.vue'
+import user_guide from '../components/user_guide.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: Home
+    path:'/extact_qa',
+    name:'extact_qa',
+    component:Extact_qa,
+    children:[
+      {
+        path:'',
+        component:user_guide
+      },
+      {
+        path:'article/:id',
+        component:extact_item
+      },
+      {
+        path:'user_guide',
+        component:user_guide
+      }
+    ]
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path:'/test_q',
+    name:'test_q',
+    component:Test_q
   }
 ]
 
