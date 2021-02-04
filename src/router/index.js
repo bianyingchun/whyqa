@@ -1,40 +1,58 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Extact_qa from '../views/Extact_qa.vue'
-import Test_q from '../views/Test_q.vue'
-import extact_item from '../components/extact_item.vue'
-import user_guide from '../components/user_guide.vue'
-Vue.use(VueRouter)
+import Vue from "vue";
+import VueRouter from "vue-router";
+import ExtactQa from "../views/extact-qa.vue";
+import TestQ from "../views/test-q.vue";
+import ExtactItem from "../components/extact-item.vue";
+import UserGuide from "../components/user-guide.vue";
+import Test from "../views/test.vue";
+import IncludeQa from "../views/include-qa.vue";
+import CollectCorpus from "../views/collect-corpus.vue";
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path:'/extact_qa',
-    name:'extact_qa',
-    component:Extact_qa,
-    children:[
+    path: "/extact-qa",
+    name: "extact-qa",
+    component: ExtactQa,
+    children: [
       {
-        path:'',
-        component:user_guide
+        path: "",
+        component: UserGuide,
       },
       {
-        path:'article/:id',
-        component:extact_item
+        path: "article/:id",
+        component: ExtactItem,
       },
       {
-        path:'user_guide',
-        component:user_guide
-      }
-    ]
+        path: "user-guide",
+        component: UserGuide,
+      },
+    ],
   },
   {
-    path:'/test_q',
-    name:'test_q',
-    component:Test_q
-  }
-]
+    path: "/test-q",
+    name: "test-q",
+    component: TestQ,
+  },
+  {
+    path: "/test",
+    name: "test",
+    component: Test,
+  },
+  {
+    path: "/include-qa",
+    name: "include-qa",
+    component: IncludeQa,
+  },
+  {
+    path: "/collect-corpus",
+    name: "collect-corpus",
+    component: CollectCorpus,
+  },
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1122607",
+      "name": "icon_fb_question",
+      "font_class": "question_without_answer",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "1421698",
+      "name": "question",
+      "font_class": "question_with_answer",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "9567123",
+      "name": "question-answer-line",
+      "font_class": "question_stanard",
+      "unicode": "e8ee",
+      "unicode_decimal": 59630
+    },
+    {
+      "icon_id": "587065",
+      "name": "refresh",
+      "font_class": "refresh",
+      "unicode": "e7d1",
+      "unicode_decimal": 59345
+    },
+    {
+      "icon_id": "7712629",
+      "name": "back",
+      "font_class": "prev",
+      "unicode": "e724",
+      "unicode_decimal": 59172
+    },
+    {
+      "icon_id": "7712725",
+      "name": "right",
+      "font_class": "next",
+      "unicode": "e73b",
+      "unicode_decimal": 59195
+    },
+    {
       "icon_id": "5127202",
       "name": "bookmark-star",
       "font_class": "bookmark-star",
